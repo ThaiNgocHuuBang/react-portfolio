@@ -6,8 +6,10 @@ import ResizeButton from "../resize.button";
 import { APP_DATA } from "@/helpers/data";
 import { MdFileDownload } from "react-icons/md";
 import { AiFillFire } from "react-icons/ai";
-
-const HeroLeft = () => {
+interface IProps {
+  scrollToExperienceSection: () => void;
+}
+const HeroLeft = (props: IProps) => {
   const { t } = useTranslation();
 
   return (
@@ -46,6 +48,7 @@ const HeroLeft = () => {
       </div>
       <div className="d-md-flex d-none gap-4">
         <ResizeButton
+          onClick={props.scrollToExperienceSection}
           btnText={t("heroSection.exp")}
           btnIcons={<AiFillFire style={{ color: "orange" }} />}
           btnStyle={{
