@@ -1,6 +1,6 @@
 interface IProps {
   btnText?: string;
-  btnIcon?: React.ReactNode;
+  btnIcons: React.ReactNode;
   btnStyle?: React.CSSProperties;
 }
 const ResizeButton = (props: IProps) => {
