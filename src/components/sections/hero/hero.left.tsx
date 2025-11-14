@@ -35,12 +35,7 @@ const HeroLeft = (props: IProps) => {
       </h3>
       <Typewriter
         options={{
-          strings: [
-            "Software Developer",
-            "Freelancer",
-            "MERN Stack Developer",
-            "Open Source Contributor",
-          ],
+          strings: ["Front-end Developer"],
           autoStart: true,
           loop: true,
           deleteSpeed: 50,
@@ -49,7 +44,7 @@ const HeroLeft = (props: IProps) => {
       />
       <div className="mt-md-6 mt-3 mb-md-5 mb-2">
         <SocialMedia
-          youtube={APP_DATA.YOUTUBE_URL}
+          github={APP_DATA.GITHUB_URL}
           facebook={APP_DATA.FACEBOOK_URL}
           tiktok={APP_DATA.TIKTOK_URL}
           udemy={APP_DATA.UDEMY_URL}
