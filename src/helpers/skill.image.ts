@@ -73,7 +73,7 @@ import webix from "assets/svg/skills/webix.svg";
 import wolframalpha from "assets/svg/skills/wolframalpha.svg";
 import wordpress from "assets/svg/skills/wordpress.svg";
 
-export const skillsImage = (skill) => {
+export const skillsImage = (skill: string) => {
   const skillID = skill.toLowerCase();
   switch (skillID) {
     case "gcp":
